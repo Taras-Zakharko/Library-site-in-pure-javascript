@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>library</h1>
+        <nav class="nav">
+            <a href="index.html">Books</a>
+            <a href="Visitors.html">Visitors</a>
+            <a href="Cards.html">Cards</a>
+            <a href="Statistic.html">Statistics</a>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="title">
+            <h2 class="book__title">all visitors:</h2>
+            <button class="btn__new-visitor btn__new">New visitor</button>
+        </div>
+        <div class="sort__search">
+            <div class="sort__div">
+                <label for="sort">
+                    <span>Sort by:</span>
+                    <select name="sort" id="sort">
+                        <option value="id">ID</option>
+                        <option value="name-vis">Name</option>
+                    </select>
+                </label>
+                <button class="btn__sort-visitor btn__sort">Sort</button>
+            </div>
+            <div class="search__div">
+                <label for="search">
+                    <span>Search:</span>
+                    <input type="text" class="search-visitor">
+                </label>
+                <button class="btn__search-visitor btn__search">Search</button>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Edit</th>
+                
+                
+            </thead>
+            <tbody class="visitor__list">
+                
+            </tbody>
+        </table>
+    </main>
+
+    <form action="" class="form__add-visitor hide">
+        <h2 class="form__title">New Visitor:</h2>
+        <input type="text" class="inp__visitor-name" placeholder="Введіть ім'я та прізвище!">
+        <span style="color:red" class="error__visit-name"></span>
+        <input type="text" class="inp__visitor-phone" placeholder="Введіть номер телефону!">
+        <span style="color:red" class="error__visit-phone"></span>
+        <button class="btn__addvisitor">Add visitor</button>
+        <button class="btn__editvisitor">Edit visitor</button>
+    </form>
+
+    <script src="Visitors.js"></script>
+</body>
+</html>

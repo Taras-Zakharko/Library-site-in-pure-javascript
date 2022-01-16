@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>library</h1>
+        <nav class="nav">
+            <a href="index.html">Books</a>
+            <a href="Visitors.html">Visitors</a>
+            <a href="Cards.html">Cards</a>
+            <a href="Statistic.html">Statistics</a>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="title">
+            <h2 class="book__title">all books:</h2>
+            <button class="btn__new-book btn__new">New book</button>
+        </div>
+        <div class="sort__search">
+            <div class="sort__div">
+                <label for="sort">
+                    <span>Sort by:</span>
+                    <select name="sort" id="sort">
+                        <option value="title">Title</option>
+                        <option value="autor">Autor</option>
+                        <option value="copies">Сopies</option>
+                    </select>
+                </label>
+                <button class="btn__sort-book btn__sort">Sort</button>
+            </div>
+            <div class="search__div">
+                <label for="search">
+                    <span>Search:</span>
+                    <input type="text" id="searc-book">
+                    
+                </label>
+                <button class="btn__search-book btn__search">Search</button>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Author's name</th>
+                <th>Year of publishing</th>
+                <th>Name of the publisher</th>
+                <th>Number of pages</th>                
+                <th>Copies</th>
+                <th>Edit/Delete</th>
+            </thead>
+            <tbody class="list__books">
+                
+            </tbody>
+        </table>
+    </main>
+
+    <form action="" class="form__addbook hide">
+        <h2 class="form__title">New Book:</h2>
+        <input type="text" class="inp-title__book all-inp__book" placeholder="Введіть назву книги">
+        <span style="color:red" class="error__title">
+        </span>
+        <input type="text" class="inp-autor__book all-inp__book" placeholder="Введіть авторів">
+        <span style="color:red" class="error__autor">
+        </span>
+        <input type="number" class="inp-year__book all-inp__book"  placeholder="Введіть рік публікації">
+        <span style="color:red" class="error__year">
+        </span>
+        <input type="text" class="inp-publ__book all-inp__book" placeholder="Введіть назву видавництва">
+        <span style="color:red" class="error__name-pub">
+        </span>
+        <input type="number" class="inp-numb-page__book all-inp__book" placeholder="Введіть кількість сторінок">
+        <span style="color:red" class="error__number">
+        </span>
+        <input type="number" class="inp-copies__book all-inp__book" placeholder="Введіть кількість екземплярів">
+        <span style="color:red" class="error__copies">
+        </span>
+        <button class="btn__addbook">Add Book</button>
+        <button class="btn__editbook">Edit Book</button>
+    </form>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
